@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Foodie Palace | payment </title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
+
+
+
+</head>
+<body>
+    <header class="header">
+
+        <section class="flex">
+     
+           <a href="home.html" class="logo">Yum <i class="fas fa-utensils"></i> Food</a>
+     
+           <nav class="navbar">
+              <a href="home.html">Home</a>
+              <a href="about.html">About</a>
+              <a href="menu">Menu</a>
+              <a href="orders">Orders</a>
+              <a href="contact">Contact</a>
+           </nav>
+     
+           <div class="icons">
+            <a href="/searching"><i class="fas fa-search"></i></a>
+              <a href="/cart"><i class="fas fa-shopping-cart"></i><span></span></a>
+              <div id="user-btn" class="fas fa-user"></div>
+              <div id="menu-btn" class="fas fa-bars"></div>
+           </div>
+     
+           <div class="profile">
+              <p class="name"></p>
+              <div class="flex">
+                 <a href="/profile" class="btn">Profile</a>
+                 <form action="logo" method="post">
+                  <a href="/logout" class="btn">Logout</a>
+                  </form>
+              </div>
+              <p class="account"><a href="login.html">login</a> or <a href="register.html">register</a></p>
+           </div>
+     
+        </section>
+     
+</header>
+
+<div class="heading">
+    <h3>Payment</h3>
+    <p><a href="home.html">Home </a> <span> / payment</span></p>
+ </div>
+ <div class="wrapper">
+    <div class="payment">
+      <div class="payment-logo">
+        <p>p</p>
+      </div>
+ 
+   
+      <h2>Payment Gateway</h2>
+    <!--  <div class="form">-->
+        <form action="charge" method="post" class="box ">
+
+        <div id="payment-card"></div>
+         
+          <div id="payment-errors"></div>
+          
+            <input type="submit" name="ok" id="ok" value="ok">
+    
+
+          
+        
+         
+      </form>
+    
+        
+      </div>
+    </div>
+  </div>
+  <script src="https://js.stripe.com/v3/"></script>
+  <script src="payment.js"></script>
+     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <footer class="footer">
+ 
+    <section class="box-container">
+ 
+       <div class="box">
+          <img src="images/email-icon.png" alt="">
+          <h3>Our email</h3>
+          <a href="mailto:rubhashree219@gmail.com">rubhashree219@gmail.com</a>
+         <a href="mailto:yogasriyoganathan@gmail.com">yogasriyoganathan@gmail.com</a>
+       </div>
+ 
+       <div class="box">
+          <img src="images/clock-icon.png" alt="">
+          <h3>Opening hours</h3>
+          <p>11 am to 11 pm </p>
+       </div>
+ 
+       <div class="box">
+          <img src="images/map-icon.png" alt="">
+          <h3>Our address</h3>
+          <a href="https://www.google.com/maps">kovilpatti-628501</a>
+       </div>
+ 
+       <div class="box">
+          <img src="images/phone-icon.png" alt="">
+          <h3>Our number</h3>
+          <a href="tel:6383455807">6383455807</a>
+          <a href="tel:7558177035">7558177035</a>
+       </div>
+ 
+    </section>
+ 
+    <div class="credit">&copy; copyright @ 2022 by <span>Foodie Palace-Yum Food</span> | all rights reserved!</div>
+ 
+ </footer>
+ 
+ <div class="loader">
+    <img src="images/loader.gif" alt="">
+ </div>
+ 
+ <script src="js/script.js"></script>
+ 
+ 
+ </body>
+ </html>
